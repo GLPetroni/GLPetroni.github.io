@@ -83,32 +83,7 @@ body {
   background-color: RoyalBlue;
 }
 </style>
-<script>
-        const hostname = "sheephead.cgrb.oregonstate.edu";
-      const protocol = "http";
-      const port = "6278";
-      const database = "omnisci";
-      const username = "admin";
-      const password = "HyperInteractive";
 
-      var connector = new MapdCon()
-        .protocol(protocol)
-        .host(hostname)
-        .port(port)
-        .dbName("omnisci")
-        .user(username)
-        .password(password)
-        .connect(function (error, con) {
-          console.log(con);
-          // var query = "SELECT pickup_latitude as lat, pickup_longitude as lon FROM taxi_weather_tracts_factual LIMIT 56000";
-          //var query = "select Heading as lat, latitude as lon from Extended limit 50000";
-          var query =
-            "select latitude as lat, longitude as lon from Plankton limit 50000";
-          var options = {};
-          con.query(query, options, function (err, result) {
-          });
-        });
-</script>
 <body>
 
 <div class="topnav">
@@ -123,9 +98,13 @@ body {
 
 <div style="padding-left: 16px">
   <h2>
-	"Hello my name is Giovanni Petroni, you are wellcome to call me Giovanni or Gio both are fine with me.  You can contact me at petronig@oregonstate.edu, I check my email a few times a day so you can expect a reply within a day.  I am a senior in Biochemistry and Molecular Biology with an option in Biocomputation and a minor in Computer Science (its a lot I know).  The most complex web development project I have done is setting up a one click button for image and .csv file zipping and downloading.  I hope to develop my ability to create visual representaitons on a web hosted environment to aid in my ability to visualize and display analysed research data or other data visualization applications.  Yes I have signed up for the class forum site.  An intresting fact about myself is I have visited over 6 countrys so far, I have my scuba diving cirtification, and have been skydiving multiple times and would recomend everyone do it at least once in their life."
   </h2>
-  <p>what do you think?</p>
+  <p>	"Hello my name is Giovanni Petroni, you are wellcome to call me Giovanni or Gio both are fine with me.  You can contact me at petronig@oregonstate.edu, 
+	  I check my email a few times a day so you can expect a reply within a day.  I am a senior in Biochemistry and Molecular Biology with an option in Biocomputation and a 
+	  minor in Computer Science (its a lot I know).  The most complex web development project I have done is setting up a one click button for image and .csv file zipping and 
+	  downloading.  I hope to develop my ability to create visual representaitons on a web hosted environment to aid in my ability to visualize and display analysed research data 
+	  or other data visualization applications.  Yes I have signed up for the class forum site.  An intresting fact about myself is I have visited over 6 countrys so far, I have my 
+	  scuba diving cirtification, and have been skydiving multiple times and would recomend everyone do it at least once in their life."</p>
 </div>
 
 <a download="186189.jpg" href="186189.jpg" title="ImageName">
